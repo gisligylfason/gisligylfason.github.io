@@ -190,6 +190,17 @@ p { margin: 0 0 1.1rem; }
   border-color: var(--accent);
 }
 
+/* references line on the homepage */
+.refs { font-size: .95rem; }
+.refs__label {
+  font-family: var(--mono);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-right: .55rem;
+}
+
 /* ---------- job market paper block ---------- */
 .jmp {
   border: 1px solid var(--rule);
