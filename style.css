@@ -1,24 +1,31 @@
 /* ============================================================
    gisligylfason.github.io — stylesheet
    Everything visual lives in this one file.
+
+   The palette is warm rather than neutral grey, and papers sit
+   on white cards over a faintly warm page. Small labels are set
+   in a mono face. Change the variables below, not the rules.
    ============================================================ */
 
 :root {
-  --ink:        #16181d;
-  --ink-soft:   #4a5058;
-  --ink-faint:  #767c86;
-  --rule:       #e3e5e9;
-  --rule-soft:  #eef0f3;
-  --bg:         #ffffff;
-  --bg-tint:    #f7f8fa;
-  --link:       #14507d;
-  --link-hover: #0d3a5c;
-  --accent:     #a63d2f;
+  --ink:        #1d1a17;   /* warm near-black, body text */
+  --ink-soft:   #56504a;   /* secondary text */
+  --ink-faint:  #8a8279;   /* labels, captions */
+  --rule:       #e6e0d7;   /* borders */
+  --rule-soft:  #f0ebe4;   /* faint dividers */
+  --bg:         #faf8f5;   /* the page itself, faintly warm */
+  --surface:    #ffffff;   /* cards sit on top of --bg */
+  --bg-tint:    #f3efe8;   /* job market block, badges */
+  --link:       #1d5570;
+  --link-hover: #123a4e;
+  --accent:     #a6432f;
 
   --serif: "Source Serif 4", Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --sans:  "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
-  --measure: 52rem;   /* page width. 56rem is as wide as Elliot Motte's; 43rem was the old value */
+  --measure: 52rem;   /* page width. 56rem is as wide as Elliot Motte's */
+  --radius:  .7rem;   /* corner rounding on cards */
 }
 
 /* ---------- reset-ish ---------- */
@@ -42,7 +49,7 @@ img { max-width: 100%; display: block; }
 a {
   color: var(--link);
   text-decoration: none;
-  border-bottom: 1px solid rgba(20, 80, 125, 0.28);
+  border-bottom: 1px solid rgba(29, 85, 112, 0.3);
   transition: color .12s ease, border-color .12s ease;
 }
 a:hover { color: var(--link-hover); border-bottom-color: currentColor; }
@@ -101,11 +108,11 @@ main { padding: 3rem 0 4rem; }
 
 h1 {
   font-family: var(--serif);
-  font-size: 2.1rem;
+  font-size: 2.8rem;
   font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin: 0 0 .35rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0 0 .4rem;
 }
 
 h2 {
@@ -124,16 +131,16 @@ p { margin: 0 0 1.1rem; }
 /* ---------- intro block (home) ---------- */
 .intro {
   display: grid;
-  grid-template-columns: 168px 1fr;
-  gap: 2.2rem;
+  grid-template-columns: 200px 1fr;
+  gap: 2.4rem;
   align-items: start;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.6rem;
 }
 .intro__photo {
-  width: 168px;
-  height: 210px;
+  width: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: var(--radius);
   background: var(--bg-tint);
 }
 .intro__role {
@@ -154,6 +161,10 @@ p { margin: 0 0 1.1rem; }
 .meta-list .label {
   display: inline-block;
   min-width: 5.2rem;
+  font-family: var(--mono);
+  font-size: .78rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
   color: var(--ink-faint);
 }
 
@@ -170,6 +181,7 @@ p { margin: 0 0 1.1rem; }
   padding: .3rem .8rem;
   border: 1px solid var(--rule);
   border-radius: 999px;
+  background: var(--surface);
   font-size: .9rem;
   color: var(--ink-soft);
 }
@@ -178,32 +190,44 @@ p { margin: 0 0 1.1rem; }
   border-color: var(--accent);
 }
 
-/* ---------- job market paper card ---------- */
+/* ---------- job market paper block ---------- */
 .jmp {
   border: 1px solid var(--rule);
   border-left: 3px solid var(--accent);
-  border-radius: 2px;
+  border-radius: var(--radius);
   background: var(--bg-tint);
   padding: 1.5rem 1.6rem 1.3rem;
   margin: 2rem 0 1rem;
 }
 .jmp__label {
+  font-family: var(--mono);
   font-size: .74rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 .55rem;
 }
-.jmp .paper { margin: 0; padding: 0; border: none; }
-
-/* ---------- papers ---------- */
-.paper {
-  padding: 0 0 1.7rem;
-  margin: 0 0 1.7rem;
-  border-bottom: 1px solid var(--rule-soft);
+/* the paper inside the block is not itself a card */
+.jmp .paper {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
 }
-.paper:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+/* ---------- papers (cards) ---------- */
+.paper {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.5rem;
+  margin: 0 0 1rem;
+  box-shadow: 0 1px 2px rgba(60, 45, 30, .05), 0 4px 12px rgba(60, 45, 30, .035);
+}
+.paper:last-child { margin-bottom: 0; }
 
 .paper__title {
   font-family: var(--serif);
@@ -221,12 +245,15 @@ p { margin: 0 0 1.1rem; }
   margin: 0 0 .6rem;
 }
 .paper__venue { font-style: italic; }
+
 /* status pill, e.g. "Under review" */
 .badge {
   display: inline-block;
   padding: .1rem .62rem;
-  font-size: .78rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: .74rem;
+  font-weight: 500;
+  letter-spacing: .02em;
   border-radius: 999px;
   color: var(--accent);
   border: 1.5px solid var(--accent);
@@ -257,8 +284,9 @@ p { margin: 0 0 1.1rem; }
 .paper summary {
   cursor: pointer;
   color: var(--ink-faint);
-  font-size: .86rem;
-  letter-spacing: .04em;
+  font-family: var(--mono);
+  font-size: .76rem;
+  letter-spacing: .03em;
   text-transform: uppercase;
   list-style: none;
   display: inline-flex;
@@ -269,7 +297,7 @@ p { margin: 0 0 1.1rem; }
 .paper summary::-webkit-details-marker { display: none; }
 .paper summary::before {
   content: "▸";
-  font-size: .8em;
+  font-size: .9em;
   transition: transform .15s ease;
   display: inline-block;
 }
@@ -294,14 +322,24 @@ p { margin: 0 0 1.1rem; }
 }
 
 /* ---------- teaching ---------- */
-.course-group { margin-bottom: 2.2rem; }
+.course-group {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(60, 45, 30, .05), 0 4px 12px rgba(60, 45, 30, .035);
+}
 .course-group__where {
   font-weight: 600;
   font-size: 1rem;
   margin: 0 0 .15rem;
 }
 .course-group__role {
-  font-size: .9rem;
+  font-family: var(--mono);
+  font-size: .76rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
   color: var(--ink-faint);
   margin: 0 0 .9rem;
 }
@@ -310,7 +348,7 @@ p { margin: 0 0 1.1rem; }
   padding: .55rem 0;
   border-bottom: 1px solid var(--rule-soft);
 }
-.courses li:last-child { border-bottom: none; }
+.courses li:last-child { border-bottom: none; padding-bottom: 0; }
 .courses .course-name { display: block; }
 .courses .course-detail {
   font-size: .89rem;
@@ -333,33 +371,44 @@ p { margin: 0 0 1.1rem; }
     grid-template-columns: 1fr;
     gap: 1.4rem;
   }
-  .intro__photo { width: 140px; height: 175px; }
-  h1 { font-size: 1.7rem; }
+  .intro__photo { width: 168px; height: 210px; }
+  h1 { font-size: 2.2rem; }
   .masthead .wrap { padding-top: 1.1rem; padding-bottom: 1.1rem; }
   .nav { gap: 1rem; font-size: .9rem; }
   main { padding: 2.2rem 0 3rem; }
+  .paper, .course-group { padding: 1.1rem 1.15rem; }
+  .jmp { padding: 1.2rem 1.2rem 1rem; }
 }
 
 /* ---------- dark mode ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink:        #e6e8ec;
-    --ink-soft:   #a9b0bb;
-    --ink-faint:  #7f8794;
-    --rule:       #2b2f37;
-    --rule-soft:  #23262d;
-    --bg:         #14161a;
-    --bg-tint:    #1b1e23;
-    --link:       #79b6e8;
-    --link-hover: #a2cdf3;
+    --ink:        #ece7e0;
+    --ink-soft:   #b3aca3;
+    --ink-faint:  #8d857b;
+    --rule:       #35302a;
+    --rule-soft:  #2a2621;
+    --bg:         #16140f;
+    --surface:    #1e1b16;
+    --bg-tint:    #262119;
+    --link:       #7fb6d4;
+    --link-hover: #a5cfe6;
     --accent:     #e08a76;
   }
-  a { border-bottom-color: rgba(121, 182, 232, 0.3); }
+  a { border-bottom-color: rgba(127, 182, 212, 0.3); }
+  .paper, .course-group { box-shadow: none; }
 }
 
 /* ---------- print ---------- */
 @media print {
   .masthead, .foot, .linkrow { display: none; }
-  body { font-size: 11pt; color: #000; }
+  body { font-size: 11pt; color: #000; background: #fff; }
+  .paper, .course-group, .jmp {
+    border: none;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+    margin-bottom: 1.2rem;
+  }
   .paper details[open] p, .paper details p { display: block; }
 }
