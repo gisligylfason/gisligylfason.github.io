@@ -44,30 +44,32 @@ in about a minute.
 
 ## Outstanding work
 
-**Still open** (the live ones are marked with `TODO` comments in the HTML):
+**Still open:**
 
-1. **Co-author name spelling** — the mental-health paper's CV entry says
-   "D. Kosenkov"; the manuscript Gísli pasted says "Dmitri Kosnekov". The site
-   currently uses Kosenkov. One of the two is a typo.
-2. **V. Eliseeva's full first name**, for the Baltics work-in-progress entry.
-   Every other author on the site is given in full.
-3. **JMP and mental-health drafts** both say "Draft available upon request" rather
+1. **JMP and mental-health drafts** both say "Draft available upon request" rather
    than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
    affiliation before circulating the JMP. Confirm before putting a public link up.
-4. **"From Tweets to the Streets"** still links a Google Drive PDF inherited from
+2. **"From Tweets to the Streets"** still links a Google Drive PDF inherited from
    the old site. Ask whether to host it in this repo instead.
-5. **Teaching course name** — the CV calls the M2 course "Political Economy 2:
-   Conflict, Institutions, Media and Governance"; `teaching.html` and the old
-   Google Site both omit the "2". Unresolved, left as-is.
-6. **The CV lists a personal phone number.** It becomes publicly downloadable the
+3. **The CV lists a personal phone number.** It becomes publicly downloadable the
    moment Pages goes live. Gísli has been told; the decision is his.
+4. **References are on the CV but not the site.** The CV lists Ekaterina
+   Zhuravskaya and Jacob N. Shapiro; Gísli plans to add more. Offer a short
+   References section on the homepage once that list is final.
+5. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
+   wording ("…Insurance Data, 2006–2020"); the CV says "…Insurance Data from
+   2006-2020". Unresolved.
 
-**Deliberately left off the site** (do not re-add without asking):
+**Settled — do not "correct" these:**
 
-- The Rannís project grant and the other grants and awards on the CV. Gísli chose
-  to leave these to the CV rather than add a "Grants" section.
-- The "Writing in media" op-ed (Vísbending, on digital media and extremism).
-  Offered and declined for this version.
+- **"National disasters"** in the JMP abstract and summary is intentional. It is
+  meant to cover natural and other kinds of disaster. It is not a typo.
+- The co-author is **Dmitri Kosenkov**. "Kosnekov" is the misspelling; it is in the
+  manuscript's author block, not in this repo.
+- The M2 course is **"Political Economy 2: Conflict, Institutions, Media and
+  Governance"**, with the 2.
+- The Rannís grant, the other grants and awards, and the "Writing in media" op-ed
+  (Vísbending) are deliberately off the site. Do not re-add without asking.
 
 ## Style notes for writing on this site
 
