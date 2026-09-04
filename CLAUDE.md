@@ -44,35 +44,30 @@ in about a minute.
 
 ## Outstanding work
 
-**Content Gísli still needs to supply** (marked with `TODO` comments in the HTML):
+**Still open** (the live ones are marked with `TODO` comments in the HTML):
 
-1. **Abstract for the job market paper**, "Doomscrolling: TikTok and Mobile News
-   Consumption" (solo-authored). Currently a placeholder on both `index.html` and
-   `research.html` — the two must stay identical.
-2. **A photo** to replace `assets/photo.jpg`. Portrait orientation, roughly 4:5.
-3. **Google Scholar URL** — placeholder `REPLACE_ME` in `index.html`.
-4. **`cv.pdf`** — not in the repo yet; the nav already links to it, so the link is
-   currently dead.
-5. **PDF and slides links for the JMP.** Note: he is re-establishing a Princeton
-   affiliation before circulating that paper publicly, so confirm with him before
-   putting a public link to the PDF up.
-6. **Status of "From Tweets to the Streets: Twitter and Extremist Protests in the
-   United States"** — listed as a working paper with a Google Drive link inherited
-   from the old site. Ask whether it is under review, and whether to host the PDF
-   in this repo instead of Drive.
+1. **Co-author name spelling** — the mental-health paper's CV entry says
+   "D. Kosenkov"; the manuscript Gísli pasted says "Dmitri Kosnekov". The site
+   currently uses Kosenkov. One of the two is a typo.
+2. **V. Eliseeva's full first name**, for the Baltics work-in-progress entry.
+   Every other author on the site is given in full.
+3. **JMP and mental-health drafts** both say "Draft available upon request" rather
+   than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
+   affiliation before circulating the JMP. Confirm before putting a public link up.
+4. **"From Tweets to the Streets"** still links a Google Drive PDF inherited from
+   the old site. Ask whether to host it in this repo instead.
+5. **Teaching course name** — the CV calls the M2 course "Political Economy 2:
+   Conflict, Institutions, Media and Governance"; `teaching.html` and the old
+   Google Site both omit the "2". Unresolved, left as-is.
+6. **The CV lists a personal phone number.** It becomes publicly downloadable the
+   moment Pages goes live. Gísli has been told; the decision is his.
 
-**Work not yet represented on the site:**
+**Deliberately left off the site** (do not re-add without asking):
 
-- A multi-authored paper using SXSW 2007 as a natural experiment for Twitter
-  adoption, with mental-health outcomes; co-authors include Jacob N. Shapiro and
-  Ekaterina Zhuravskaya. Currently a stub under "Work in Progress" in
-  `research.html` under a provisional title. Ask Gísli what title, author list and
-  status he wants shown publicly.
-- A funded Rannís (Icelandic Research Fund) project grant, with Gylfi Zoega as PI.
-  Not currently anywhere on the site — consider a short "Grants" section, or leave
-  it to the CV.
-- The old Google Site had a "Writing in media" page of op-eds and public-facing
-  writing. Gísli did not select it for the first version; offer it later.
+- The Rannís project grant and the other grants and awards on the CV. Gísli chose
+  to leave these to the CV rather than add a "Grants" section.
+- The "Writing in media" op-ed (Vísbending, on digital media and extremism).
+  Offered and declined for this version.
 
 ## Style notes for writing on this site
 

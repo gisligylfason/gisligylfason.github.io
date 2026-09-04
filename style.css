@@ -221,11 +221,12 @@ p { margin: 0 0 1.1rem; }
   margin: 0 0 .6rem;
 }
 .paper__venue { font-style: italic; }
+/* status line: "Under review", "Draft available upon request" */
 .paper__note {
-  display: inline-block;
-  font-size: .82rem;
+  font-size: .88rem;
+  font-weight: 600;
   color: var(--accent);
-  margin-left: .1rem;
+  margin: 0 0 .55rem;
 }
 
 /* short summary, shown above the abstract disclosure */

@@ -33,8 +33,10 @@
          HOW TO ADD A PAPER
          Copy one <article class="paper"> … </article> block below,
          paste it where you want it, and edit the text.
-         Delete the <details> block if there is no abstract yet.
-         Delete any <li> in paper__links you don't need.
+           paper__note    the bold status line, in the accent colour
+           paper__summary the short summary that is always visible
+           details        the full abstract, hidden until clicked
+         Delete any block you don't need.
          ========================================================= -->
 
     <h2>Job Market Paper</h2>
@@ -42,29 +44,68 @@
     <article class="paper">
       <h3 class="paper__title">Doomscrolling: TikTok and Mobile News Consumption</h3>
       <p class="paper__meta">Solo-authored</p>
-      <!-- TODO: replace with two sentences saying what the paper finds -->
-      <p class="paper__summary">[One or two sentences on the main finding go here.]</p>
+      <p class="paper__note">Draft available upon request.</p>
+      <p class="paper__summary">Using device-level mobile browsing and app use data and a shock to
+      early TikTok adoption, I find that TikTok use substantially reduces news consumption around
+      major events such as election weeks, national disasters and major political developments, on
+      both the extensive and intensive margins. Survey evidence shows the effect reaches beyond
+      mobile devices: media markets with high TikTok use see less traditional news consumption,
+      lower political knowledge and more partisan polarization in presidential approval.</p>
       <details>
         <summary>Full abstract</summary>
-        <!-- TODO: replace with the real abstract -->
-        <p>[Abstract to be added.]</p>
+        <p>How does TikTok use affect news consumption? Leveraging detailed device-level mobile
+        browsing and app use data and a shock to early adoption of TikTok as a novel, plausibly
+        exogenous source of variation, this paper estimates the causal effect of TikTok use on
+        mobile news consumption in the United States. I find that increased TikTok use
+        substantially reduces news consumption related to major news events such as election weeks,
+        national disasters and major political developments. TikTok use causes decreases along both
+        the extensive and intensive margins. It also causes a decrease in the length of
+        individuals&rsquo; news consumption sessions, suggesting that reduced attention spans
+        contribute to the effect. Survey evidence shows that the effect is not limited to mobile
+        devices and has downstream consequences: high-TikTok-use media markets show decreases in
+        traditional news consumption and political knowledge, and increases in partisan
+        polarization in presidential approval, after TikTok&rsquo;s proliferation.</p>
       </details>
-      <ul class="paper__links">
-        <li><a href="#">Paper</a></li>
-        <li><a href="#">Slides</a></li>
-      </ul>
     </article>
 
     <h2>Working Papers</h2>
 
     <article class="paper">
-      <h3 class="paper__title">From Tweets to the Streets: Twitter and Extremist Protests in the United States</h3>
+      <h3 class="paper__title">Twitter&rsquo;s Effect on Mental Health: Evidence from
+        Population-Scale U.S. Insurance Data, 2006&ndash;2020</h3>
+      <!-- TODO: confirm the spelling — your CV says Kosenkov, the manuscript says Kosnekov -->
+      <p class="paper__meta">with Debra Baseman, Greta Bushnell, Kara J. Dolinski, Daniel B. Horton,
+        Dmitri Kosenkov, Manoj Kumar, Emnet Sisay, Olga G. Troyanskaya,
+        <a href="https://sites.google.com/site/ekaterinazhuravskaya/">Ekaterina Zhuravskaya</a> and
+        <a href="https://scholar.princeton.edu/jns/">Jacob N. Shapiro</a></p>
+      <p class="paper__note">Under review. Draft available upon request. This draft: August 2026.</p>
+      <p class="paper__summary">Linking population-scale U.S. public and private insurance claims to
+      a shock to early Twitter adoption, we find that Twitter penetration raised claims for anxiety,
+      depression and eating disorders from 2011 onward.</p>
+      <details>
+        <summary>Full abstract</summary>
+        <p>Social media may harm mental health, but population-scale causal evidence remains
+        limited. Existing studies mostly rely on self-reported outcomes, small samples, and short
+        time horizons. We link population-scale health insurance claims across the social media era
+        (2006&ndash;2020) to geographic variation in Twitter use. Mental-health claims increase 28%
+        more over this period in metropolitan areas with above-median Twitter use. To isolate
+        causality we leverage an exogenous shock to Twitter adoption at the 2007 South-by-Southwest
+        festival. We estimate that a one-percentage-point increase in metropolitan-area adult
+        Twitter use, relative to that year&rsquo;s national average, led to 3.5 additional annual
+        claims per 100 insured for anxiety, depression, and eating disorders. The increase is
+        consistent from 2011&ndash;2020, larger for women and, among the privately insured,
+        adolescents. These results suggest social media may harm mental health directly, through
+        content, and indirectly, by changing social interactions.</p>
+      </details>
+    </article>
+
+    <article class="paper">
+      <h3 class="paper__title">From Tweets to the Streets: Twitter and Extremist Protests in the
+        United States</h3>
       <p class="paper__meta">Solo-authored &middot; April 2025</p>
-      <!-- TODO: is this under review? If so, say where. -->
-      <p class="paper__summary">Twitter penetration increases the frequency of protests in the
-      United States, but also radicalizes them, disproportionately fuelling protests that involve
-      militant, radical or hateful groups on both the left and the right. Survey evidence suggests
-      that coordination is not the only channel: Twitter also intensifies opinions.</p>
+      <p class="paper__note">Under review.</p>
+      <p class="paper__summary">Twitter raised the frequency of U.S. protests and disproportionately
+      fuelled those involving extreme groups, on both the political left and the right.</p>
       <details>
         <summary>Full abstract</summary>
         <p>How does social media affect the composition of political protests in the United States?
@@ -85,24 +126,25 @@
     <h2>Work in Progress</h2>
 
     <article class="paper">
-      <!-- TODO: confirm the title you want to use publicly for the Twitter / mental-health project -->
-      <h3 class="paper__title">Twitter and Mental Health</h3>
-      <p class="paper__meta">with
-        <a href="https://scholar.princeton.edu/jns/">Jacob N. Shapiro</a>,
-        <a href="https://sites.google.com/site/ekaterinazhuravskaya/">Ekaterina Zhuravskaya</a>
-        and others
-      </p>
+      <h3 class="paper__title">Russian State Television and Voting in the Baltics</h3>
+      <!-- TODO: V. Eliseeva's full first name, so the author lists match -->
+      <p class="paper__meta">with V. Eliseeva and
+        <a href="https://sites.google.com/site/ekaterinazhuravskaya/">Ekaterina Zhuravskaya</a></p>
+      <p class="paper__summary">Using the 2022 suspension of Russian state television in Estonia and
+      Latvia, this project studies how losing access to propaganda changes voting among Russian
+      speakers.</p>
     </article>
 
-    <h2>Publications</h2>
+    <h2>Pre-doctoral Publications</h2>
 
     <article class="paper">
       <h3 class="paper__title">
-        <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/manc.12504">Iceland&rsquo;s Natural Experiment in Education Reform</a>
+        <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/manc.12504">A Natural Experiment
+        in Education Reform: The Case of Upper-Secondary Curriculum Compression</a>
       </h3>
       <p class="paper__meta">
         with Tinna Laufey Ásgeirsdóttir and Gylfi Zoega &middot;
-        <span class="paper__venue">The Manchester School</span>, 2025
+        <span class="paper__venue">The Manchester School</span>, 2025, 93, 319&ndash;367
       </p>
       <ul class="paper__links">
         <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/manc.12504">Published version</a></li>
@@ -111,11 +153,13 @@
 
     <article class="paper">
       <h3 class="paper__title">
-        <a href="https://link.springer.com/article/10.1007/s10902-023-00666-y">Monetizing Utility Reductions Associated with Bullying</a>
+        <a href="https://link.springer.com/article/10.1007/s10902-023-00666-y">Monetizing Utility
+        Reductions Associated with Bullying</a>
       </h3>
       <p class="paper__meta">
-        with Tinna Laufey Ásgeirsdóttir, Arna Hauksdóttir, Edda Björk Þórðardóttir and Unnur Anna Valdimarsdóttir &middot;
-        <span class="paper__venue">Journal of Happiness Studies</span>, 2023, 24, 2395&ndash;2439
+        with Tinna Laufey Ásgeirsdóttir, Arna Hauksdóttir, Edda Björk Þórðardóttir and
+        Unnur Anna Valdimarsdóttir &middot;
+        <span class="paper__venue">Journal of Happiness Studies</span>, 2023, 24(8), 2395&ndash;2439
       </p>
       <ul class="paper__links">
         <li><a href="https://link.springer.com/article/10.1007/s10902-023-00666-y">Published version</a></li>
@@ -124,11 +168,13 @@
 
     <article class="paper">
       <h3 class="paper__title">
-        <a href="https://eprints.bbk.ac.uk/id/eprint/50126/1/3459-5953-1-PB%20%282%29.pdf">Gender Differences in Iceland&rsquo;s Education System</a>
+        <a href="https://eprints.bbk.ac.uk/id/eprint/50126/1/3459-5953-1-PB%20%282%29.pdf">Gender
+        Differences in Iceland&rsquo;s Education System</a>
       </h3>
       <p class="paper__meta">
         with Gylfi Zoega &middot;
-        <span class="paper__venue">Icelandic Journal of Education</span>, 2021, 30(2), 135&ndash;165
+        <span class="paper__venue">Tímarit um uppeldi og menntun / Icelandic Journal of Education</span>,
+        2021, 30(2), 135&ndash;165
       </p>
       <ul class="paper__links">
         <li><a href="https://eprints.bbk.ac.uk/id/eprint/50126/1/3459-5953-1-PB%20%282%29.pdf">PDF</a></li>
