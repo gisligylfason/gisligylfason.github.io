@@ -68,6 +68,8 @@ in about a minute.
   manuscript's author block, not in this repo.
 - The M2 course is **"Political Economy 2: Conflict, Institutions, Media and
   Governance"**, with the 2.
+- Solo-authored papers carry no "Solo-authored" label. An author line with no
+  co-authors already says it.
 - The Rannís grant, the other grants and awards, and the "Writing in media" op-ed
   (Vísbending) are deliberately off the site. Do not re-add without asking.
 
