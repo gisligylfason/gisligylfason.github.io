@@ -49,14 +49,12 @@ in about a minute.
 1. **JMP and mental-health drafts** both say "Draft available upon request" rather
    than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
    affiliation before circulating the JMP. Confirm before putting a public link up.
-2. **"From Tweets to the Streets"** still links a Google Drive PDF inherited from
-   the old site. Ask whether to host it in this repo instead.
-3. **The CV lists a personal phone number.** It becomes publicly downloadable the
+2. **The CV lists a personal phone number.** It becomes publicly downloadable the
    moment Pages goes live. Gísli has been told; the decision is his.
-4. **References are on the CV but not the site.** The CV lists Ekaterina
+3. **References are on the CV but not the site.** The CV lists Ekaterina
    Zhuravskaya and Jacob N. Shapiro; Gísli plans to add more. Offer a short
    References section on the homepage once that list is final.
-5. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
+4. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
    wording ("…Insurance Data, 2006–2020"); the CV says "…Insurance Data from
    2006-2020". Unresolved.
 
@@ -72,6 +70,11 @@ in about a minute.
   co-authors already says it.
 - The Rannís grant, the other grants and awards, and the "Writing in media" op-ed
   (Vísbending) are deliberately off the site. Do not re-add without asking.
+- **"From Tweets to the Streets"** keeps its Google Drive link. Asked and decided
+  on 9 September 2026: fine for now. Do not rehost it in the repo without asking.
+- **Teaching evaluations are deliberately not on the site.** A commented-out
+  "Evaluations" placeholder in `teaching.html` was removed on 9 September 2026.
+  Do not re-add it.
 
 ## Style notes for writing on this site
 
