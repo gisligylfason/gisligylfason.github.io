@@ -31,19 +31,38 @@ will look at, so correctness and restraint matter more than visual flourish.
 | `teaching.html` | Teaching record |
 | `style.css` | All styling |
 | `analytics.js` | Custom GoatCounter events — see Analytics below |
+| `robots.txt` | Allows all crawlers, points at the sitemap |
+| `sitemap.xml` | The three pages, for search engines |
 | `assets/photo.jpg` | Portrait photo |
 | `cv.pdf` | The CV. Keep this filename so links never break. |
 
 ## Publishing
 
-The GitHub repo is `gisligylfason/gisligylfason.github.io`, currently **private**
-and with GitHub Pages **not yet enabled** — Gísli does not want the site visible
-until the content is finished. On a free GitHub account, Pages requires a public
-repo, so the plan is: work privately, then flip the repo to public and enable
-Pages in Settings → Pages when he says it is ready.
+**The site went live on 9 September 2026.** The repo
+`gisligylfason/gisligylfason.github.io` is public and GitHub Pages is enabled,
+serving `main` from the root. It is at https://gisligylfason.github.io/.
 
 Deploy is `git add . && git commit -m "..." && git push`. The live site updates
 in about a minute.
+
+Because it is now public, **anything committed here is immediately world-readable.**
+Check before adding a file, not after.
+
+## Search and discoverability
+
+`robots.txt` allows everything and points at `sitemap.xml`, which lists the three
+pages. Add a url block to the sitemap whenever a page is added.
+
+Every page carries a `<title>`, a meta description, a canonical URL and Open
+Graph tags. `index.html` also carries a JSON-LD `Person` block naming the
+affiliation, interests and Google Scholar profile — keep it in step with the bio
+if either changes.
+
+What actually moves the needle for a new academic site, in order: time (weeks),
+Google Search Console indexing requests, and inbound links from pages Google
+already trusts — the PSE directory page, Google Scholar, coauthors' sites. The
+files above only make the site legible once crawlers arrive; they do not summon
+them.
 
 ## Analytics
 
@@ -81,17 +100,20 @@ Notes for anyone changing this:
 
 **Still open:**
 
-1. **Register the GoatCounter site code.** The HTML points at
+1. **Verify the site in Google Search Console** and submit the sitemap. Not done
+   as of 9 September 2026. This is the single most useful thing for getting
+   indexed; see Search and discoverability above.
+2. **Register the GoatCounter site code.** The HTML points at
    `https://gisligylfason.goatcounter.com/count`. That subdomain was free on
    9 September 2026 but is **not yet registered**. Until Gísli signs up at
    goatcounter.com and claims exactly that code, events go nowhere. If he
    registers a different code, change it in all three HTML files.
-2. **JMP and mental-health drafts** both say "Draft available upon request" rather
+3. **JMP and mental-health drafts** both say "Draft available upon request" rather
    than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
    affiliation before circulating the JMP. Confirm before putting a public link up.
-3. **References are on the CV but not the site.** — done on the homepage
+4. **References are on the CV but not the site.** — done on the homepage
    (Zhuravskaya, Shapiro, Vanden Eynde). Revisit only if he adds more.
-4. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
+5. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
    wording ("…Insurance Data, 2006–2020"); the CV says "…Insurance Data from
    2006-2020". Unresolved.
 
