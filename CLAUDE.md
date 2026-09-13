@@ -35,14 +35,14 @@ will look at, so correctness and restraint matter more than visual flourish.
 | `sitemap.xml` | The three pages, for search engines |
 | `assets/photo.jpg` | Portrait photo |
 | `cv.pdf` | The CV. Keep this filename so links never break. |
-| `papers/doomscrolling.pdf` | **Permanent URL for the JMP.** Currently a placeholder — see below. |
+| `papers/Doomscrolling_JMP_GYLFASON.pdf` | **Permanent URL for the JMP.** Currently a placeholder — see below. |
 
 ## The JMP's permanent URL
 
-`https://gisligylfason.github.io/papers/doomscrolling.pdf` is printed on the
+`https://gisligylfason.github.io/papers/Doomscrolling_JMP_GYLFASON.pdf` is printed on the
 title page of the JMP itself ("Click here for the most recent version"), so it
-is baked into every copy that circulates. **It must never change.** Named after
-the paper rather than `jmp.pdf` because the paper outlives the job market.
+is baked into every copy that circulates. **It must never change.** Gísli chose
+the filename on 13 September 2026; do not "tidy" it.
 
 As of 13 September 2026 the file at that path is a **one-page placeholder** —
 title, author, "not yet publicly available", the URL, and the email for
@@ -50,7 +50,7 @@ requesting a draft. It says nothing the website does not already say. It is
 deliberately **not linked from any page and not in the sitemap**; the URL exists
 for the paper's title page and for administrative forms that need one.
 
-When Gísli is ready to circulate: overwrite `papers/doomscrolling.pdf` with the
+When Gísli is ready to circulate: overwrite `papers/Doomscrolling_JMP_GYLFASON.pdf` with the
 real paper, and only then add a link on `research.html` and `index.html` and
 update the "Draft available upon request" lines. Do not do either without his
 say-so — see Outstanding work.
@@ -123,20 +123,24 @@ Notes for anyone changing this:
 
 **Still open:**
 
-1. **Google has not indexed the site.** As of 13 September 2026, four days after
-   launch, `site:gisligylfason.github.io` returns nothing. The reason is the
-   backlink picture, checked that day:
-   - The **PSE directory page** (ranks #1 for his name) links to the **old Google
-     Sites page**, not the new site. Gísli needs to email PSE to update it.
-   - The **old Google Sites page** (`sites.google.com/view/gisligylfason`, still
-     live, ranks #2) does not link to the new site. Gísli should add a "moved to"
-     link there. Do not unpublish it yet — while it ranks it is a bridge. Once the
-     new site ranks for his name, take it down so it stops competing.
-   - **Google Scholar** now links to the new site. That is the only inbound link.
-   - Search Console verification file is live at
-     `google25db1f77c05ff190.html` (committed 9 September; do not delete). Whether
-     Gísli clicked Verify, submitted the sitemap and requested indexing is inside
-     his account and cannot be checked from here — ask.
+1. **Retire the old Google Sites page cleanly.** Google first crawled the new
+   site on 13 September 2026 (1:37 PM, per Search Console) and it now appears in
+   results. The same day Gísli **unpublished** the old page
+   (`sites.google.com/view/gisligylfason`), but that only makes it 302 to a
+   Google sign-in page, which returns 200 — so it stays in Google's index and the
+   Refresh Outdated Content tool rejects it as "still live". The fix, not yet
+   done: republish it as a single line ("This site has moved to
+   gisligylfason.github.io") with **Publish settings → "Request public search
+   engines to not display my site"** ticked, then resubmit to
+   `search.google.com/search-console/remove-outdated-content` using the
+   "content has been removed" path. Delete the Google Site only after it has
+   dropped out of results and PSE has updated their link.
+   - The **PSE directory page** (#1 result for his name) still links to the old
+     page, which now dead-ends at a sign-in wall. Gísli needs to email PSE — a
+     draft was given to him on 13 September. Not yet sent as far as known.
+   - **Google Scholar** links to the new site. Search Console is verified via
+     `google25db1f77c05ff190.html` (do not delete); sitemap submitted, indexing
+     requested.
 2. **JMP and mental-health drafts** both say "Draft available upon request" rather
    than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
    affiliation before circulating the JMP. Confirm before putting a public link up.
