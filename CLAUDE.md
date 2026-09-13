@@ -35,6 +35,28 @@ will look at, so correctness and restraint matter more than visual flourish.
 | `sitemap.xml` | The three pages, for search engines |
 | `assets/photo.jpg` | Portrait photo |
 | `cv.pdf` | The CV. Keep this filename so links never break. |
+| `papers/doomscrolling.pdf` | **Permanent URL for the JMP.** Currently a placeholder — see below. |
+
+## The JMP's permanent URL
+
+`https://gisligylfason.github.io/papers/doomscrolling.pdf` is printed on the
+title page of the JMP itself ("Click here for the most recent version"), so it
+is baked into every copy that circulates. **It must never change.** Named after
+the paper rather than `jmp.pdf` because the paper outlives the job market.
+
+As of 13 September 2026 the file at that path is a **one-page placeholder** —
+title, author, "not yet publicly available", the URL, and the email for
+requesting a draft. It says nothing the website does not already say. It is
+deliberately **not linked from any page and not in the sitemap**; the URL exists
+for the paper's title page and for administrative forms that need one.
+
+When Gísli is ready to circulate: overwrite `papers/doomscrolling.pdf` with the
+real paper, and only then add a link on `research.html` and `index.html` and
+update the "Draft available upon request" lines. Do not do either without his
+say-so — see Outstanding work.
+
+The placeholder is a 30-line `pdflatex` document; if it ever needs regenerating,
+the text above is the whole content.
 
 ## Publishing
 
