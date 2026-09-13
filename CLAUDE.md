@@ -123,6 +123,10 @@ Notes for anyone changing this:
 4. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
    wording ("…Insurance Data, 2006–2020"); the CV says "…Insurance Data from
    2006-2020". Unresolved.
+5. **The CV still has the old JMP title.** The site dropped "Mobile" from
+   "Doomscrolling: TikTok and Mobile News Consumption" on 13 September 2026;
+   `cv.pdf` still has it. Gísli regenerates the CV — the source is not in this
+   repo. When a new `cv.pdf` arrives, commit it under the same filename.
 
 **Settled — do not "correct" these:**
 
