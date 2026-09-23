@@ -8,7 +8,9 @@
    ============================================================ */
 
 :root {
-  --ink:        #1d1a17;   /* warm near-black, body text */
+  color-scheme: light;   /* light only, whatever the device's dark mode setting */
+
+  --ink:       #1d1a17;   /* warm near-black, body text */
   --ink-soft:   #56504a;   /* secondary text */
   --ink-faint:  #8a8279;   /* labels, captions */
   --rule:       #e6e0d7;   /* borders */
@@ -389,25 +391,6 @@ p { margin: 0 0 1.1rem; }
   main { padding: 2.2rem 0 3rem; }
   .paper, .course-group { padding: 1.1rem 1.15rem; }
   .jmp { padding: 1.2rem 1.2rem 1rem; }
-}
-
-/* ---------- dark mode ---------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink:        #ece7e0;
-    --ink-soft:   #b3aca3;
-    --ink-faint:  #8d857b;
-    --rule:       #35302a;
-    --rule-soft:  #2a2621;
-    --bg:         #16140f;
-    --surface:    #1e1b16;
-    --bg-tint:    #262119;
-    --link:       #7fb6d4;
-    --link-hover: #a5cfe6;
-    --accent:     #e08a76;
-  }
-  a { border-bottom-color: rgba(127, 182, 212, 0.3); }
-  .paper, .course-group { box-shadow: none; }
 }
 
 /* ---------- print ---------- */

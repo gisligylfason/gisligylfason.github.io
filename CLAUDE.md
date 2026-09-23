@@ -19,7 +19,9 @@ will look at, so correctness and restraint matter more than visual flourish.
   the same way. Change all three files together.
 - Papers are `<article class="paper">` blocks. Abstracts sit in a `<details>`
   disclosure. To add a paper, copy a block and edit it.
-- Light and dark mode are both supported via `prefers-color-scheme`. Check both.
+- **Light only.** A dark scheme via `prefers-color-scheme` was removed on
+  23 September 2026 at Gísli's request, so every visitor sees the cream page.
+  `:root` declares `color-scheme: light`. Do not re-add dark mode without asking.
 - Preview by opening `index.html` in a browser. No server needed.
 
 ## Files
