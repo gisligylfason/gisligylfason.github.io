@@ -156,8 +156,6 @@ Notes for anyone changing this:
   co-authors already says it.
 - The Rannís grant, the other grants and awards, and the "Writing in media" op-ed
   (Vísbending) are deliberately off the site. Do not re-add without asking.
-- **"From Tweets to the Streets"** keeps its Google Drive link. Asked and decided
-  on 9 September 2026: fine for now. Do not rehost it in the repo without asking.
 - **Teaching evaluations are deliberately not on the site.** A commented-out
   "Evaluations" placeholder in `teaching.html` was removed on 9 September 2026.
   Do not re-add it.
