@@ -37,7 +37,7 @@ will look at, so correctness and restraint matter more than visual flourish.
 | `sitemap.xml` | The three pages, for search engines |
 | `assets/photo.jpg` | Portrait photo |
 | `cv.pdf` | The CV. Keep this filename so links never break. |
-| `papers/Doomscrolling_JMP_GYLFASON.pdf` | **Permanent URL for the JMP.** Currently a placeholder — see below. |
+| `papers/Doomscrolling_JMP_GYLFASON.pdf` | **Permanent URL for the JMP.** The full paper — see below. |
 
 ## The JMP's permanent URL
 
@@ -46,19 +46,11 @@ title page of the JMP itself ("Click here for the most recent version"), so it
 is baked into every copy that circulates. **It must never change.** Gísli chose
 the filename on 13 September 2026; do not "tidy" it.
 
-As of 13 September 2026 the file at that path is a **one-page placeholder** —
-title, author, "not yet publicly available", the URL, and the email for
-requesting a draft. It says nothing the website does not already say. It is
-deliberately **not linked from any page and not in the sitemap**; the URL exists
-for the paper's title page and for administrative forms that need one.
-
-When Gísli is ready to circulate: overwrite `papers/Doomscrolling_JMP_GYLFASON.pdf` with the
-real paper, and only then add a link on `research.html` and `index.html` and
-update the "Draft available upon request" lines. Do not do either without his
-say-so — see Outstanding work.
-
-The placeholder is a 30-line `pdflatex` document; if it ever needs regenerating,
-the text above is the whole content.
+**The full paper went public on 1 October 2026**, at Gísli's request. Until then
+the path held a one-page placeholder. The paper is now linked ("Paper") from the
+JMP block on `research.html` and `index.html`, with "This draft: October 2026."
+To post a new version, overwrite the file at the same path and update the
+"This draft" line and, if it changed, the abstract on both pages.
 
 ## Publishing
 
@@ -143,9 +135,9 @@ Notes for anyone changing this:
    - **Google Scholar** links to the new site. Search Console is verified via
      `google25db1f77c05ff190.html` (do not delete); sitemap submitted, indexing
      requested.
-2. **JMP and mental-health drafts** both say "Draft available upon request" rather
-   than linking a PDF. That is deliberate: Gísli is re-establishing a Princeton
-   affiliation before circulating the JMP. Confirm before putting a public link up.
+2. **The mental-health draft** says "Draft available upon request" rather than
+   linking a PDF. That is deliberate. Confirm before putting a public link up.
+   (The JMP has been linked since 1 October 2026.)
 3. **References are on the CV but not the site.** — done on the homepage
    (Zhuravskaya, Shapiro, Vanden Eynde). Revisit only if he adds more.
 4. **Title of the mental-health paper.** The site follows Ekaterina Zhuravskaya's
