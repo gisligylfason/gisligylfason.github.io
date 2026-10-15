@@ -26,7 +26,7 @@
   --sans:  "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
-  --measure: 52rem;   /* page width. 56rem is as wide as Elliot Motte's */
+  --measure: 66rem;   /* page width on a computer; phones just use the full screen */
   --radius:  .7rem;   /* corner rounding on cards */
 }
 
@@ -282,12 +282,15 @@ p { margin: 0 0 1.1rem; }
   margin: 0 0 .55rem;
 }
 
-/* short summary, shown above the abstract disclosure */
-.paper__summary {
+/* short abstract, shown above the full-abstract disclosure;
+   and a full abstract shown open, as on the job market paper */
+.paper__summary,
+.paper__abstract {
   font-size: .95rem;
   line-height: 1.6;
   margin: 0 0 .7rem;
 }
+.paper__label { font-weight: 600; color: var(--ink); }
 
 /* abstract disclosure */
 .paper details {
@@ -298,7 +301,7 @@ p { margin: 0 0 1.1rem; }
   cursor: pointer;
   color: var(--ink-faint);
   font-family: var(--mono);
-  font-size: .76rem;
+  font-size: .88rem;
   letter-spacing: .03em;
   text-transform: uppercase;
   list-style: none;
@@ -328,10 +331,18 @@ p { margin: 0 0 1.1rem; }
   display: flex;
   flex-wrap: wrap;
   gap: .45rem .9rem;
-  margin: .5rem 0 0;
+  margin: .5rem 0 .7rem;
   padding: 0;
   list-style: none;
-  font-size: .9rem;
+  font-size: 1.05rem;
+}
+.paper__links:last-child { margin-bottom: 0; }
+/* grey "This draft: …" date, on the same line as the Paper link */
+.paper__links { align-items: baseline; }
+.paper__draft {
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 /* ---------- teaching ---------- */

@@ -43,8 +43,10 @@
          paste it where you want it, and edit the text.
            badge          the pill, e.g. <span class="badge">Under review</span>
            paper__note    the quieter line, e.g. "Draft available upon request."
-           paper__summary the short summary that is always visible
+           paper__summary the short abstract that is always visible
            details        the full abstract, hidden until clicked
+           paper__abstract a full abstract shown open, with no short
+                          one (used for the job market paper)
          Delete any block you don't need.
          ========================================================= -->
 
@@ -52,15 +54,11 @@
 
     <article class="paper">
       <h3 class="paper__title">Doomscrolling: TikTok and News Consumption</h3>
-      <p class="paper__note">This draft: October 2026.</p>
-      <p class="paper__summary">Using device-level mobile use data and a novel instrument for TikTok use,
-      I find that TikTok use substantially reduces news consumption around
-      major news events such as elections. Survey evidence shows the effect extends beyond
-      mobile devices: TikTok use also decreases traditional news consumption,
-      political knowledge and turnout, and increases partisan polarization in presidential approval.</p>
-      <details>
-        <summary>Full abstract</summary>
-        <p>How does TikTok use affect news consumption and downstream political outcomes? Leveraging
+      <ul class="paper__links">
+        <li><a href="papers/Doomscrolling_JMP_GYLFASON.pdf">Paper</a></li>
+        <li class="paper__draft">This draft: October 2026.</li>
+      </ul>
+      <p class="paper__abstract">How does TikTok use affect news consumption and downstream political outcomes? Leveraging
         detailed device-level mobile browsing and app use data and a shock to early adoption of
         TikTok as a novel, plausibly exogenous source of variation, I estimate the causal effect of
         TikTok use on news consumption, political knowledge, attitudes and behavior in the United
@@ -73,10 +71,6 @@
         media markets have lower traditional news consumption, political knowledge and turnout, and
         higher partisan polarization in presidential approval after, but not before,
         TikTok&rsquo;s proliferation.</p>
-      </details>
-      <ul class="paper__links">
-        <li><a href="papers/Doomscrolling_JMP_GYLFASON.pdf">Paper</a></li>
-      </ul>
     </article>
 
     <h2>Working Papers</h2>
@@ -90,7 +84,7 @@
         <a href="https://jns.scholar.princeton.edu/">Jacob N. Shapiro</a></p>
       <p class="paper__note"><span class="badge">Under review</span> Draft available upon request.
         This draft: August 2026.</p>
-      <p class="paper__summary">Linking population-scale U.S. public and private insurance claims to
+      <p class="paper__summary"><span class="paper__label">Short abstract:</span> Linking population-scale U.S. public and private insurance claims to
       a shock to early Twitter adoption, we find that Twitter penetration raised claims for anxiety,
       depression and eating disorders from 2011 onward.</p>
       <details>
@@ -113,8 +107,11 @@
     <article class="paper">
       <h3 class="paper__title">From Tweets to the Streets: Twitter and Extremist Protests in the
         United States</h3>
-      <p class="paper__meta">May 2025</p>
-      <p class="paper__summary">Twitter raised the frequency of U.S. protests and disproportionately
+      <ul class="paper__links">
+        <li><a href="papers/GYLFASON_TweetsStreets_May2025.pdf">Paper</a></li>
+        <li class="paper__draft">This draft: May 2025.</li>
+      </ul>
+      <p class="paper__summary"><span class="paper__label">Short abstract:</span> Twitter raised the frequency of U.S. protests and disproportionately
       fuelled those involving extreme groups, on both the political left and the right.</p>
       <details>
         <summary>Full abstract</summary>
@@ -128,9 +125,6 @@
         county-level Twitter penetration also intensifies opinions, plausibly increasing
         individuals&rsquo; willingness to partake in protests involving extreme groups.</p>
       </details>
-      <ul class="paper__links">
-        <li><a href="papers/GYLFASON_TweetsStreets_May2025.pdf">Paper</a></li>
-      </ul>
     </article>
 
     <h2>Work in Progress</h2>
